@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Triagem</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='triagem.css'>
+    <script src='main.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Triagem</span>
+        </div>
+    </nav>
+    
+  <header>
+        <section class="dados">
+          <nav class="navbar bg-body-tertiary aval">
+            <div class="container-fluid">
+              <span class="navbar-brand mb-0 h1">Dados Pessoais</span>
+            </div>
+          </nav>  
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Nome:</label>
+                  <input type="text" class="form-control" id="autoSizingInput" placeholder="Digite seu nome completo:">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Número de telefone</label>
+                  <input type="number" class="form-control" id="inputPassword4" placeholder="(00) 00000-0000">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Data de Nascimento</label>
+                    <input type="number" class="form-control" id="inputPassword4" placeholder="00/00/0000">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">CPF</label>
+                    <input type="number" class="form-control" id="inputPassword4" placeholder="000-000-000-00">
+                  </div>
+                <div class="col-md-6">
+                  <label for="inputAddress" class="form-label">Endereço</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Digite seu Endereço">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputAddress" class="form-label">Complemento</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Digite o Complemento (Opcional)">
+                </div>
+                
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="inputAddress2" placeholder="Digite seu E-mail">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Cidade</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Estado</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Selecione...</option>
+                      <option>AC</option>
+                      <option>AL</option>
+                      <option>AP</option>
+                      <option>BA</option>
+                      <option>CE</option>
+                      <option>DF</option>
+                      <option>GO</option>
+                      <option>MG</option>
+                      <option>RJ</option>
+                      <option>SP</option>
+
+                    </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">CEP</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+              </form>
+        </section>
+        
+        
+
+
+      <section class="avaliacao">
+          <nav class="navbar bg-body-tertiary aval">
+            <div class="container-fluid">
+              <span class="navbar-brand mb-0 h1">Avaliação Médica</span>
+            </div>
+          </nav>  
+          <div class="content">
+            <div class="div-p">
+              <p class="p1">Possui alguma comorbidade?</p>
+            </div>
+                   <div class="col-md-2">
+                      <select id="inputState" class="form-select">
+                        <option selected>Selecione...</option>
+                        <option>Sim</option>
+                        <option>Não</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 epc">
+                      <select id="inputState" class="form-select">
+                        <option selected>Qual?</option>
+                        <option value="1">Arritmias cardíacas</option>
+                        <option value="2">Cardiopatia hipertensiva</option>
+                        <option value="3">Diabetes mellitus</option>
+                        <option value="4">Hipertensão arterial</option>
+                        <option value="5">Insuficiência cardíaca</option>
+                        <option value="6">Obesidade mórbida</option>
+                        <option value="7">Síndrome de Down</option>
+                        <option value="8">Outros</option>
+                      </select>
+                    </div> 
+                    <div class="col-md-2 epc">
+                      <input type="text" class="form-control" id="autoSizingInput" placeholder="Outros">
+                    </div>    
+           </div>
+
+          <div class="content">
+            <div class="div-p">
+              <p class="p2">Faz uso de algum medicamento?</p>
+            </div>
+              <div class="col-md-2">
+                  <select id="inputState" class="form-select">
+                    <option selected>Selecione...</option>
+                    <option>Sim</option>
+                    <option>Não</option>
+                  </select>
+              </div>
+
+            <div class="col-md-6 epc">
+              <input type="text" class="form-control" id="autoSizingInput" placeholder="Observações (Opcional)">
+            </div>       
+          </div>
+
+          <div class="content">
+            <div class="div-p">
+              <p class="p1">É gestante?</p>
+            </div>
+              <div class="col-md-2">
+                  <select id="inputState" class="form-select">
+                    <option selected>Selecione...</option>
+                    <option>Sim</option>
+                    <option>Não</option>
+                  </select>
+              </div>
+
+            <div class="col-md-6 epc">
+              <input type="number" class="form-control" id="autoSizingInput" placeholder="Quantas semanas?">
+            </div>       
+          </div>
+
+          <div class="content">
+            <div class="div-p">
+              <p class="p1">Possui algum vício?</p>
+            </div>
+              <div class="col-md-2">
+                  <select id="inputState" class="form-select">
+                    <option selected>Selecione...</option>
+                    <option>Sim</option>
+                    <option>Não</option>
+                  </select>
+              </div>
+
+            <div class="col-md-6 epc">
+              <input type="text" class="form-control" id="autoSizingInput" placeholder="Ex: cigarros, bebidas, drogas">
+            </div>       
+          </div>
+
+          <div class="content">
+            <div class="div-p">
+              <p class="p1">Cirurgia recente?</p>
+            </div>
+              <div class="col-md-2">
+                  <select id="inputState" class="form-select">
+                    <option selected>Selecione...</option>
+                    <option>Sim</option>
+                    <option>Não</option>
+                  </select>
+              </div>
+
+            <div class="col-md-6 epc">
+              <input type="text" class="form-control" id="autoSizingInput" placeholder="Observações (Opcional)">
+            </div>
+          </div>
+          <div class="content">
+            <div class="div-p">
+              <p class="p1">Possui alguma limitação?</p>
+            </div>
+                   <div class="col-md-2">
+                      <select id="inputState" class="form-select">
+                        <option selected>Selecione...</option>
+                        <option>Sim</option>
+                        <option>Não</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 epc">
+                      <select id="inputState" class="form-select">
+                        <option selected>Qual?</option>
+                        <option value="1">Auditiva</option>
+                        <option value="2">Visual</option>
+                        <option value="3">Motora</option>
+                        <option value="4">Fala</option>
+                        <option value="5">Outras</option>
+                      </select>
+                    </div> 
+                    <div class="col-md-2 epc">
+                      <input type="text" class="form-control" id="autoSizingInput" placeholder="Outras">
+                    </div>    
+          </div>
+      </section>
+      <section class="sintomas">
+
+        <div class="content2">
+          <nav class="navbar bg-body-tertiary aval">
+            <div class="container-fluid">
+              <span class="navbar-brand mb-0 h1">Sintomas</span>
+            </div>
+          </nav>  
+          <p class="p1">Quais são os sintomas apresentados?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">Febre</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">Tosse</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox4">Dor de garganta</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox5">Coriza</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Congestão Nasal
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Espirro
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox7">Adinamia(fraquza)</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox8">Dores no corpo</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox9">Dificuldade de respirar</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox10">Anosmia(Perda do Olfato)</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox10">Ageusia(Perda de paladar)</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Diarreia
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Disfagia (Dificuldade para engolir)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Nausea/Vômito
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Taquicardia
+            </label>
+          </div>
+          
+        </div>
+        <div class="content3">
+          <nav class="navbar bg-body-tertiary aval">
+            <div class="container-fluid">
+              <span class="navbar-brand mb-0 h1">Queixa pricipal</span>
+            </div>
+          </nav>  
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"><p class="dq">Descreva sua Queixa:</p></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Digite aqui..."></textarea>
+          </div>
+        </div>
+      </section>
+      <section class="cores">
+        <nav class="navbar bg-body-tertiary aval">
+          <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Classificação</span>
+          </div>
+        </nav>  
+        <div class="content4">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <nav class="navbar bg-body-tertiary cc1">
+              <div class="container-fluid c1">
+                <span class="navbar-brand mb-0 h1 ">NÃO URGÊNCIA</span>
+              </div>
+            </nav>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <nav class="navbar bg-body-tertiary">
+              <div class="container-fluid c2">
+                <span class="navbar-brand mb-0 h1 ">POUCA URGÊNCIA</span>
+              </div>
+            </nav>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <nav class="navbar bg-body-tertiary">
+              <div class="container-fluid c3">
+                <span class="navbar-brand mb-0 h1 ">URGÊNCIA</span>
+              </div>
+            </nav>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid c4">
+                  <span class="navbar-brand mb-0 h1 ">MUITA URGÊNCIA</span>
+                </div>
+              </nav>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid c5">
+                  <span class="navbar-brand mb-0 h1 ">EMERGÊNCIA</span>
+                </div>
+              </nav>
+          </div>
+          <form action="informaçoes.html">
+            <div class="but">
+              <button  value="inforçoes " type="submit"  class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+            
+          
+
+        
+        
+        </div>
+
+
+
+
+
+
+
+      </section>
+        
+        
+      
+    
+        
+        
+        
+  </header>
+  
+    
+  
+
+
+      
+      
+    
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 2200px;
+    width: 100%;
+    background-color: bisque;
+    
+    
+}
+.dados{  
+    height: 500px;
+    width: 70%;
+    
+}
+
+
+
+.avaliacao{
+    height:450px;
+    width: 70%;
+}
+
+
+.content{
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+}
+
+
+.p2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.div-p{
+    width: 300px;
+    height: 50px;
+    
+}
+
+.p1{
+    margin-right: 20px;
+    font-size: 20px;
+    text-align: center
+}
+
+
+.epc{
+    margin-left: 20px;
+}
+
+.sintomas{
+    width: 70%;
+    height: 600px;
+    display: flex;
+   
+}
+.content2{
+    width: 50%;
+    padding: 10px 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.content3{
+    width: 50%;
+    padding: 10px 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.dq{
+    font-size: 20px;
+}
+.cores{
+    width: 70%;
+    height: 600px;
+    padding-top: 10px;
+}
+.content4{
+    width: 100%;
+    padding: 10px 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.c1{
+    background-color: rgba(0, 0, 255, 0.767);
+}
+.c2{
+    background-color: rgba(0, 128, 0, 0.767);
+}
+.c3{
+    background-color: rgba(255, 255, 0, 0.708);
+}
+.c4{
+    background-color: rgba(255, 166, 0, 0.728);
+}
+.c5{
+    background-color: rgba(255, 0, 0, 0.668);
+}
+.but{
+
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+}
+@media screen and (max-width:1200px){
+    .avaliacao{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:800px){
+    .dados{
+        height: 1000px;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .avaliacao{
+        height: 1000px;
+    }
+    .div-p{
+        width: 50%;
+    }
+    .sintomas{
+        height: 700px;
+        width: 100%;
+    }
+    .cores{
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px){
+    .dados{
+        margin-top: 150px;
+    }
+    .avaliacao{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .sintomas{
+        height: 830px;
+        margin-top: 30px;
+    }
+    .p1{
+        font-size: 15px;
+    }
+    .p2{
+        font-size: 15px;
+    }
+}
